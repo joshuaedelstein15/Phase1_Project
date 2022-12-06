@@ -38,10 +38,10 @@ The overall business questions we are trying to answer are:
 We begin by importing all the necessary packages to do the research.
 
 <html>
-<body>
-<p>import sqlite3
-import math
-import pandas as pd
+ <body>
+  <p>import sqlite3 
+import math 
+import pandas as pd 
 import datetime as dt
 import numpy as np
 import seaborn as sns
@@ -49,8 +49,9 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 from pandasql import sqldf
 pysqldf = lambda q: sqldf(q, globals())</p>
-</body>
+ </body>
 </html>
+
 ### IMDB statistics
 
 We then load the required database from IMDB. This contains basic non-monetary information about different movies.
