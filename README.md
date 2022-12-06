@@ -14,6 +14,12 @@ We will analyze the market from different angles:
 - We will then move on the see overall ratings by genre
 - Lastly, we will offer overall recommendations.
 
+<div>
+<img src="images/movie.jpg", width = 600, height = 300/>
+</div>
+
+Photo by <a href="https://unsplash.com/photos/q8P8YoR6erg">GR stocks</a> on <a href="/@grstocks">Unsplash</a>
+
 ### Data Understanding
 The data we are using is from two sources. Firstly, we are using a sql dataset from imdb which contains non-monetary information for over 70,000 movies. The next dataset is a much smaller csv file containing budgeting information regarding many movies.
 
