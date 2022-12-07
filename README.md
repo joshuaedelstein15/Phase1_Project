@@ -105,7 +105,7 @@ Clearly it will not be helpful to do analysis on each of the 220 indivual genres
 
 Due to this issue, we will run a sql query which breaks the genres up into five main genre dataframes: `Action`, `Comedy`, `Drama`, `Horror`, and `Romance`. We will then use those to create new dataframes which contain just the gross profit for each genre.
 
-We will then run a check to make sure these loaded properly.
+We should now run a check to make sure these loaded properly.
 
 Now we will create a histogram of gross profit for each genre. To accomplish this more efficiently we will create three different lists. The first will contain a text version of each genre, this will used to label the x-axis. The second will contain each of the five new dataframes containing the gross profit. The third will contain five different colors, which will be used to different between the histograms. Finally, we can create a for loop to plot the five different histograms. Additionally, each histogram will contain a vertical line at the mean of each dataset.
 
