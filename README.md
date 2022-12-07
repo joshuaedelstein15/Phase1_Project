@@ -10,9 +10,9 @@ Microsoft has decided to create a new movie studio, and has tasked us  with expl
 We will analyze the market from different angles:
 - First, we will analyze the numbers, and which genres are making the largest gross profit.
 - Next, we will take a look at which genre is making the greatest percent profit.
-- Then, we will identify if the length of movie has any affect on its ratings.
-- We will then move on the see overall ratings by genre
-- Lastly, we will offer overall recommendations.
+- (maybe remove)Then, we will identify if the length of movie has any affect on its ratings.
+- (maybe remove) We will then move on the see overall ratings by genre
+At the end, we will offer overall recommendations.
 
 <div>
 <img src="images/movie.jpg", width = 600, height = 300/>
