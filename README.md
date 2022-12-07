@@ -82,7 +82,7 @@ Additionally, we don't want to include movies that had a very small budget as th
 ### Monetary analysis
 First, we will compare the relationship between each movies gross profit and the budget, by calculating the correlation coefficient as well as plotting out the points. 
 
-The correlation between the 2 values is above .7, this means there is a strong positive correlation btwn gross profit and production.<!-- https://journals.lww.com/anesthesia-analgesia/fulltext/2018/05000/correlation_coefficients__appropriate_use_and.50.aspx
+The correlation between the 2 values is above .7, this means there is a strong positive correlation between gross profit and production.<!-- https://journals.lww.com/anesthesia-analgesia/fulltext/2018/05000/correlation_coefficients__appropriate_use_and.50.aspx
  -->. The scatterplot illustrates this point as we see the best fit line as an increasing slope. This is useful information as it shows that the more money that is spent on the film the greater the profit. 
  
 Although, this was helpful, it will be more useful to figure out the relationship between the budget and percent gain. This value will show us from a business perspective whether one should invest a lot into a movie in hopes of exponentially multiplying their investment.
