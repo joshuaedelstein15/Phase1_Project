@@ -15,7 +15,7 @@ We will analyze the market from different angles:
 At the end, we will offer overall recommendations.
 
 <div>
-<img src="images/movie.jpg", width = 600, height = 300/>
+<img src="Images/movie.jpg", width = 600, height = 300/>
 </div>
 
 Photo by <a href="https://unsplash.com/photos/q8P8YoR6erg">GR stocks</a> on <a href="/@grstocks">Unsplash</a>
