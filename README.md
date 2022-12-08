@@ -4,7 +4,7 @@ Analysis of which films are doing the best in box office
 # Movie Analysis
 
 ## Introduction
-Microsoft has decided to create a new movie studio, and has tasked us  with exploring what types of films are currently doing the best at the box office. We will analyze the market based on a few different metrics and present microsoft with our findings as well as offer insights on the current marke.
+Microsoft has decided to create a new movie studio, and has tasked us  with exploring what types of films are currently doing the best at the box office. We will analyze the market based on a few different metrics and present microsoft with our findings as well as offer insights on the current market.
 
 ## Objectives
 We will analyze the market from different angles:
