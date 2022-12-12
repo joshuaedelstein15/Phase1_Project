@@ -165,3 +165,6 @@ We then moved on, and looked at non-monetary metrics for success, and found some
 1. We found that there is basically no correlation between ratings and runtime. Therefore, when making a film, one shouldn't focus on the length of the movie but rather the quality.
 2. We found that on average drama and romance are the highest rated genres, followed by comedy and action, with horror in last. As such, if one wants to create a highly rated film, they should make a feel-good drama/ romantic movie. 
 3. Lastly, we found that there is very little correlation between gross profit and ratings. This is a meaningful finding, as it teaches us that when focused on making a movie, one has to choose what their metric for success is before making the movie. If they want to make a large profit they will have to focus on very different things then if they were trying to make a movie with high ratings.
+
+## For More Information
+See the full analysis in the <a href="https://github.com/joshuaedelstein15/Phase1_Project/blob/main/Movie_Analysis.ipynb">Jupyter Notebook</a> or review this <a href="https://github.com/joshuaedelstein15/Phase1_Project/blob/main/Phase_1_Presentation.pdf">presentation</a>
