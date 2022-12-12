@@ -2,7 +2,7 @@
 Analysis of which films are doing the best in box office  
 
 ## Introduction
-Microsoft has decided to create a new movie studio, and has tasked us  with exploring what types of films are currently doing the best at the box office. We will analyze the market based on a few different metrics and present microsoft with our findings as well as offer insights on the current market.
+Microsoft has decided to create a new movie studio, and has tasked us  with exploring what types of films are currently doing the best at the box office. We will analyze the market based on a few different metrics and present Microsoft with our findings as well as offer insights on the current market.
 
 ## Objectives
 We will analyze the market from different angles:
@@ -64,7 +64,7 @@ Although, we assumed that there were no movies with the same name released in th
 
 ## 3. Editing the data
 
-In order to analyze the monetary data we will need to use the `production_budget`, `domestic_gross`, and `worldwide_gross` columns. Upon taking a closer look we realize that these columns are strings instead of the integer values that we want.
+In order to analyze the monetary data we will need to use the `production_budget`, `domestic_gross`, and `worldwide_gross` columns. Upon taking a closer look we realize that these columns are strings instead of the integer values.
 
 ### Fixing the values
 
@@ -76,9 +76,9 @@ To change the values from string to integer:
 
 ## 4. Data Analysis
 
-Besides for the raw amount of money that each movie grossed it is useful to know what percent profit the movie gained in comparison to how much they put in. We accomplish this by creating a new column `gross_vs_budget` which divides the `worldwide_gross` by the `production_budget`. This will show us the profit multiple/ how many times greater a movies profit was then its budget.
+Besides for the raw amount of money that each movie grossed it is useful to know what percent profit the movie gained in comparison to how much they put in. We accomplish this by creating a new column `gross_vs_budget` which divides the `worldwide_gross` by the `production_budget`. This will show us the profit multiple/ how many times greater a movies profit was than its budget.
 
-Additionally, we don't want to include movies that had a very small budget as they can skew our data. As such, we will only include movies with a budget of atleast 1 million dollars.
+Additionally, we don't want to include movies that had a very small budget as they can skew our data. As such, we will only include movies with a budget of at least 1 million dollars.
 
 ### Monetary analysis
 First, we will compare the relationship between each movies gross profit and the budget. We will do this by calculating the correlation coefficient as well as plotting the relationship on a scatter plot.
@@ -108,7 +108,7 @@ Due to this issue, we will run a sql query which breaks the genres up into five 
 
 We should now run a check to make sure these loaded properly.
 
-Now we will create a histogram of gross profit for each genre. To accomplish this more efficiently we will create three different lists. The first will contain a text version of each genre, this will used to label the x-axis. The second will contain each of the five new dataframes containing the gross profit. The third will contain five different colors, which will be used to differentiate between the histograms. Finally, we can create a for loop to plot the five different histograms. Additionally, each histogram will contain a vertical line at the mean of each dataset.
+Now we will create a histogram of gross profit for each genre. To accomplish this more efficiently we will create three different lists. The first will contain a text version of each genre, this will be used to label the x-axis. The second will contain each of the five new dataframes containing the gross profit. The third will contain five different colors, which will be used to differentiate between the histograms. Finally, we can create a for loop to plot the five different histograms. Additionally, each histogram will contain a vertical line at the mean of each dataset.
 
 Interestingly, all the histograms roughly have the same shape, this shape seems to indicate that profit falls into the Pareto distribution.<!-- https://www.youtube.com/watch?v=EAynHZE-lK4 --> Meaning that the minority of movies account for the vast majority of the profit. Additionally, it appears that the genres of action and comedy are the most profitable, while drama, horror, and romance are less profitable.
 
@@ -122,13 +122,13 @@ We will now move on and look into non monetary statistics. We begin by loading b
 We see that both `runtime_minutes` and `genre` are missing some values. We will have to clean this data before we are able to pull useful information from it.
 
 ### Data Cleaning
-Let's begin by taking all the movies that are missing their genre and replacing the NaN value with "Absent." This is the most logical way to solve this issue as it won't affect any of the other genres. 
+Let's begin by taking all the movies that are missing their genre and replacing the NaN values with "Absent". This is the most logical way to solve this issue as it won't affect any of the other genres. 
 We will then run a check to make sure the values were indeed changed.
 
 In terms of the values in the `runtime_minutes` column, it wouldn't make sense to create new values for each row randomly selected based on the current distribution of data, as this would create false information for each specific movie. Instead we will drop all of the rows that contain NaN values. Although this seems like a lot of rows we are still left with around 90% of our original data. 
 Again we will run a check to make sure it ran properly.
 
-Additionally, there may be some outlier values that were have a large impact on the mean as well as other aggregate functions. As such lets only include data that is within two standard deviations of the mean. Then we will run a check to make sure the new maximum and minimum seem to be realistic numbers.
+Additionally, there may be some outlier values that will have a large impact on the mean as well as other aggregate functions. As such lets only include data that is within two standard deviations of the mean. Then we will run a check to make sure the new maximum and minimum seem to be realistic numbers.
 
 ### Data Analysis
 Now, let's plot the distribution of the runtimes to see if there is any useful information.
@@ -137,7 +137,7 @@ The data seems to be very normal, as the median and mean are only 2 minutes apar
 
 Now let's check if there is any correlation between the length of the movie and its overall rating, and graph the distribution on a scatter plot.
 
-With a value of -.02 the relationship is basically non existant. This is illustrated in the graph, which looks similar to a rain cloud in that there seems to be no recognizable place to put a best fit line
+With a value of -.02 the relationship is basically non existent. This is illustrated in the graph, which looks similar to a rain cloud in that there seems to be no recognizable place to put a best fit line
 
 We will move on and break all the movies up by our five main genres. Then we will select only the average rating column from each row.
 
@@ -145,7 +145,7 @@ Now we will plot average rating by genre. Similar to the last time we plotted 5 
 
 All the histograms have a relatively normal distribution with a slight skew to the left. This shows that most movies are above the mean but there are some values on the low end that pull the mean down and make it lower. 
 
-We also see that in terms of ratings, drama is the highest rated genre, followed by romance. This makes sense as people are looking for feel-good movies and these two genres accomplish that the best. The next ranked genres are comedy and action, these genres are more of a raw form of entertainment, if people want to laugh or see something cool. Finally, we have horror with the lowest average ranking. Although, people choose to go to horror movies, they don't walk out feeling like they had a real positive experience. The films are made to give people a quick scare without walking away with anything real.
+We also see that in terms of ratings, drama is the highest rated genre, followed by romance. This makes sense as people are looking for feel-good movies and these two genres accomplish that the best. The next ranked genres are comedy and action, these genres are more of a raw form of entertainment, if people want to laugh or see something cool. Finally, we have horror with the lowest average ranking. Although, people choose to go to horror movies, they don't walk out feeling like they had a real experience. The films are made to give people a quick scare without walking away with anything real.
 
 The last thing we should take a look at is the relationship between ratings and gross, to see if there is any correlation between these two. If there is, then it would show us that if one aims to make a movie with higher ratings than a large profit will come along with that.
 
