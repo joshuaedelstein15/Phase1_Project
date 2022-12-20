@@ -116,6 +116,17 @@ However, these results may be a function of how much on average each genre is sp
 
 As we predicted the budget for action movies is much greater on average than for other genres. As such the average profit multiple for action movies is the lowest of all the genres. Another significant finding from our data is that although horror movies average gross was standard compared to the other genres, their average budget was far lower than the other genres. As such their profit multiple is at least double all the other values. This demonstrates that when looking for the best investment, it pays to create a lower budget horror movie.
 
+### Different Way to break up genres
+We will now break the data up into genres, and do analysis based on that.
+We'll start by splitting all the genres into a list of all the genres for that movie
+Then we will use explode to have one listing of each movie per each genre
+We will then group by each genre, and return the count of movies per genre. Since it isn't helpful to use genres with a small sample size, we will only select the genres with at least 150 movies.
+We will then create another df which does the same thing yet shows all the mean statistics.
+We will now join our 2 dfs together to create a new df with all the mean statistics for genres with over 150 movies.
+Then we will sort the gross values in order to prepare them to be graphed
+Finally we will create a bar graph of the values
+Now, we will do the same thing for ROI
+
 ### Non-monetary Analysis
 We will now move on and look into non monetary statistics. We begin by loading basic info about the imdb_db
 
