@@ -84,7 +84,7 @@ Additionally, we don't want to include movies that had a very small budget as th
 First, we will compare the relationship between each movies gross profit and the budget. We will do this by calculating the correlation coefficient as well as plotting the relationship on a scatter plot.
 
 <div>
-<img src="Images/Budg_vs_Prof.jpg", width = 500, height = 200/>
+<img src="Images/Budg_vs_Prof.jpg", width = 500, height = 250/>
 </div>
 
 The correlation between the 2 values is above .7, this means there is a strong positive correlation between gross profit and production.<!-- https://journals.lww.com/anesthesia-analgesia/fulltext/2018/05000/correlation_coefficients__appropriate_use_and.50.aspx
@@ -93,7 +93,7 @@ The correlation between the 2 values is above .7, this means there is a strong p
 Although, this was helpful, it will be more useful to figure out the relationship between the budget and percent gain. This value will show us, from a business perspective, whether one should invest a lot into a movie in hopes of exponentially multiplying their investment.
 
 <div>
-<img src="Images/Budg_vs_ROI.jpg", width = 500, height = 200/>
+<img src="Images/Budg_vs_ROI.jpg", width = 500, height = 250/>
 </div>
 
 Since the correlation coefficient is below .1 there is negligible correlation between these factors. This shows that from an investors perspective, if interested in multiplying your investment, the size of your budget will not play a major role. 
@@ -135,13 +135,13 @@ Then we will sort the gross values in order to prepare them to be graphed
 Finally we will create a bar graph of the values
 
 <div>
-<img src="Images/Genre_prof.jpg", width = 500, height = 200/>
+<img src="Images/Genre_prof.jpg", width = 500, height = 250/>
 </div>
 
 Now, we will do the same thing for ROI
 
 <div>
-<img src="Images/Genre_ROI.jpg", width = 500, height = 200/>
+<img src="Images/Genre_ROI.jpg", width = 500, height = 250/>
 </div>
 
 ### Non-monetary Analysis
